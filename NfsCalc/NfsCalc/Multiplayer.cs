@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace NfsCalc
 {
-    public class  Multiplayer
-    {
-        public string Calculate(double first, double second)
-        {
-            double result = first * second;
-            return result.ToString();
+    public class Multiplayer : IBinaryCalculator
 
-        }
+{
+    public string Calculate(double first, double second)
+    {
+        double result = first*second;
+        return result.ToString();
 
     }
+
+}
 }

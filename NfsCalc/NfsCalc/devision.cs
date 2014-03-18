@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NfsCalc
 {
-    public class devision
+    public class devision:IBinaryCalculator
     {
         public string Calculate(double first, double second)
         {
