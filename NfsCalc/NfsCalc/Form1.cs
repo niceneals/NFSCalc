@@ -8,6 +8,7 @@ using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NfsCalc.BinaryCalculator;
 
 namespace NfsCalc
 {
@@ -50,7 +51,7 @@ namespace NfsCalc
         {
             double firstArgument = Convert.ToDouble(Argument1.Text);
             double secondArgument = Convert.ToDouble(Argument2.Text);
-            devision adder = new devision();
+            Division adder = new Division();
             Result.Text = adder.Calculate(firstArgument, secondArgument);
         }
     }
