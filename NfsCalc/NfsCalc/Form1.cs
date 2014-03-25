@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.ExceptionServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,33 +27,28 @@ namespace NfsCalc
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double firstArgument = Convert.ToDouble(Argument1.Text);
-            double secondArgument = Convert.ToDouble(Argument2.Text);
-            Adder adder=new Adder();
-            Result.Text = adder.Calculate(firstArgument,secondArgument);
+            BinaryCalculator("Adder");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double firstArgument = Convert.ToDouble(Argument1.Text);
-            double secondArgument = Convert.ToDouble(Argument2.Text);
-            Substraction adder=new Substraction();
-            Result.Text = adder.Calculate(firstArgument, secondArgument);
+          BinaryCalculator("Substraction");
         }
         private void button3_Click_1(object sender, EventArgs e)
         {
-            double firstArgument = Convert.ToDouble(Argument1.Text);
-            double secondArgument = Convert.ToDouble(Argument2.Text);
-            Multiplayer adder = new Multiplayer();
-            Result.Text = adder.Calculate(firstArgument, secondArgument);
+            BinaryCalculator("Multiplayer");
         }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
+           BinaryCalculator("Division");
+        }
+        private void BinaryCalculator(string name)
+        {
             double firstArgument = Convert.ToDouble(Argument1.Text);
             double secondArgument = Convert.ToDouble(Argument2.Text);
-            Division adder = new Division();
-            Result.Text = adder.Calculate(firstArgument, secondArgument);
+            IBinaryCalculator calculator = BinaryCalculatorFactory.CreateBinaryCalculator(name);
+            Result.Text = calculator.Calculate(firstArgument, secondArgument);
         }
     }
 }
