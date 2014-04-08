@@ -81,5 +81,30 @@ namespace NfsCalc
         {
             BinaryOperation("tg");
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("Cos");
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("Modul");
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("Powm2");
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("exp(x)");
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("ctg");
+        }
     }
 }

@@ -47,8 +47,13 @@
     <Compile Include="BinaryCalculator\BinaryCalculatorFactory.cs" />
     <Compile Include="BinaryCalculator\Division.cs" />
     <Compile Include="BinaryCalculator\Pow%28m,n%29.cs" />
+    <Compile Include="BinaryOperation\Cos.cs" />
+    <Compile Include="BinaryOperation\ctg.cs" />
+    <Compile Include="BinaryOperation\exp%28x%29.cs" />
     <Compile Include="BinaryOperation\log.cs" />
+    <Compile Include="BinaryOperation\Modul.cs" />
     <Compile Include="BinaryOperation\MonoFactory.cs" />
+    <Compile Include="BinaryOperation\Powm2.cs" />
     <Compile Include="BinaryOperation\Sin.cs" />
     <Compile Include="BinaryOperation\Sqrt.cs" />
     <Compile Include="BinaryOperation\tg.cs" />
