@@ -20,6 +20,8 @@ namespace NfsCalc.BinaryCalculator
                     return new Substraction();
                 case "Multiplayer":
                     return new Multiplayer();
+                case "Pow(m,n)":
+                    return new Pow_m_n_();
                 default:
                     throw new ArgumentException("Неизвестный калькулятор", "name");
             }

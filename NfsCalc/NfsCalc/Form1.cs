@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using NfsCalc.BinaryCalculator;
+using NfsCalc.BinaryOperation;
 
 namespace NfsCalc
 {
@@ -49,6 +50,36 @@ namespace NfsCalc
             double secondArgument = Convert.ToDouble(Argument2.Text);
             IBinaryCalculator calculator = BinaryCalculatorFactory.CreateBinaryCalculator(name);
             Result.Text = calculator.Calculate(firstArgument, secondArgument);
+        }
+        private void BinaryOperation(string name)
+        {double firstArgument=Convert.ToDouble(Argument1.Text);
+        IBinaryOperation calculator = MonoFactory.CreateBinaryOperation(name);
+        Result.Text = calculator.Calculate(firstArgument);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("Sqrt");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("Sin");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("log");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            BinaryCalculator("Pow(m,n)");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("tg");
         }
     }
 }
