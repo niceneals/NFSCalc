@@ -44,15 +44,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryOperation\Arccosinus.cs" />
+    <Compile Include="BinaryOperation\Arcsinus.cs" />
     <Compile Include="BinaryCalculator\BinaryCalculatorFactory.cs" />
     <Compile Include="BinaryCalculator\Division.cs" />
     <Compile Include="BinaryCalculator\Pow%28m,n%29.cs" />
     <Compile Include="BinaryOperation\Cos.cs" />
     <Compile Include="BinaryOperation\ctg.cs" />
+    <Compile Include="BinaryOperation\DegreesToRadians.cs" />
+    <Compile Include="BinaryOperation\DivisionOneIntoX.cs" />
     <Compile Include="BinaryOperation\exp%28x%29.cs" />
     <Compile Include="BinaryOperation\log.cs" />
+    <Compile Include="BinaryOperation\log2_X.cs" />
     <Compile Include="BinaryOperation\Modul.cs" />
     <Compile Include="BinaryOperation\MonoFactory.cs" />
+    <Compile Include="BinaryOperation\powXE.cs" />
     <Compile Include="BinaryOperation\Powm2.cs" />
     <Compile Include="BinaryOperation\Sin.cs" />
     <Compile Include="BinaryOperation\Sqrt.cs" />

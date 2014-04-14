@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NfsCalc.BinaryCalculator;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +22,12 @@ namespace NfsCalc.BinaryOperation
                 case "Powm2": return new Powm2();
                 case "exp(x)": return new exp_x_();
                 case "ctg": return new ctg();
+                case "Arcsinus": return new Arcsinus();
+                case "Arccosinus": return new Arccosinus();
+                case "DegreesToRadians": return new DegreesToRadians();
+                case "DivisionOneIntoX": return new DivisionOneIntoX();
+                case "powXE": return new powXE();
+                case "log2_X": return new log2_X();    
                 default:
                     throw new ArgumentException("Неизвестный калькулятор", "name");
             }

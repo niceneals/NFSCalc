@@ -106,5 +106,35 @@ namespace NfsCalc
         {
             BinaryOperation("ctg");
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("Arcsinus");
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("Arccosinus");
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("powXE");
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("DegreesToRadians");
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("DivisionOneIntoX");
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("log2_X");
+        }
     }
 }
