@@ -8,11 +8,11 @@ namespace NfsCalc.BinaryCalculator
 {
     public class powXE: IBinaryOperation
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double e = 2.7;
             double result = Math.Pow(first, e);
-            return result.ToString();
+            return result;
         }
     }
 }

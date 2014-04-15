@@ -8,10 +8,10 @@ namespace NfsCalc.BinaryCalculator
 {
     public class Arcsinus : IBinaryOperation
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = Math.Asin(first);
-            return result.ToString();
+            return result;
         }
     }
 }

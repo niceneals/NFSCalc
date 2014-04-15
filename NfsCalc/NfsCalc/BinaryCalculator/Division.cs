@@ -2,10 +2,10 @@
 {
     public class Division:IBinaryCalculator
     {
-        public string Calculate(double first, double second)
+        public double Calculate(double first, double second)
         {
             double result = first / second;
-            return result.ToString();
+            return result;
 
         }
     }

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NfsCalc.BinaryCalculator
+namespace NfsCalc.BinaryOperation
 {
-    public class Arccosinus : IBinaryOperation
+    public class DivisionTwoIntoX : IBinaryOperation
     {
         public double Calculate(double first)
         {
-            double result = Math.Acos(first);
+            double result = 2 / first;
             return result;
         }
     }

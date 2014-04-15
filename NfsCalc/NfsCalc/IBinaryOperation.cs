@@ -8,6 +8,6 @@ namespace NfsCalc
 {
     public interface IBinaryOperation
     {
-        string Calculate(double first);
+        double Calculate(double first);
     }
 }

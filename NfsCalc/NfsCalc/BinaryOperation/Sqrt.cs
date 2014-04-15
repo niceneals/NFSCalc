@@ -8,10 +8,10 @@ namespace NfsCalc.BinaryOperation
 {
     public class Sqrt:IBinaryOperation
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = Math.Sqrt(first);
-            return result.ToString();
+            return result;
         }
     }
 }

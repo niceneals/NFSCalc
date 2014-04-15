@@ -53,11 +53,14 @@
     <Compile Include="BinaryOperation\ctg.cs" />
     <Compile Include="BinaryOperation\DegreesToRadians.cs" />
     <Compile Include="BinaryOperation\DivisionOneIntoX.cs" />
+    <Compile Include="BinaryOperation\DivisionTwoIntoX.cs" />
     <Compile Include="BinaryOperation\exp%28x%29.cs" />
+    <Compile Include="BinaryOperation\Factorial.cs" />
     <Compile Include="BinaryOperation\log.cs" />
     <Compile Include="BinaryOperation\log2_X.cs" />
     <Compile Include="BinaryOperation\Modul.cs" />
     <Compile Include="BinaryOperation\MonoFactory.cs" />
+    <Compile Include="BinaryOperation\Powm3.cs" />
     <Compile Include="BinaryOperation\powXE.cs" />
     <Compile Include="BinaryOperation\Powm2.cs" />
     <Compile Include="BinaryOperation\Sin.cs" />

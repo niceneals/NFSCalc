@@ -8,10 +8,10 @@ namespace NfsCalc.BinaryCalculator
 {
     public class DegreesToRadians : IBinaryOperation
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = first*0.01745;
-            return result.ToString();
+            return result;
         }
     }
 }

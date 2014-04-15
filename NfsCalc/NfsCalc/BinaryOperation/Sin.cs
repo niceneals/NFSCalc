@@ -8,10 +8,10 @@ namespace NfsCalc.BinaryOperation
 {
     public class Sin:IBinaryOperation
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = Math.Sin(first);
-            return result.ToString();
+            return result;
         }
     }
 }

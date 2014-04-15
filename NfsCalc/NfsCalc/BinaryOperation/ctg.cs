@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 {
     public class ctg:IBinaryOperation
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = Math.Cos(first)/Math.Sin(first);
-            return result.ToString();
+            return result;
         }
     }
 }

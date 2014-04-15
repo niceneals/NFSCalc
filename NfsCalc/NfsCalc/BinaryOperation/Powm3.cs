@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NfsCalc.BinaryCalculator
+namespace NfsCalc.BinaryOperation
 {
-    public class Arccosinus : IBinaryOperation
+    public class Powm3 : IBinaryOperation
     {
         public double Calculate(double first)
         {
-            double result = Math.Acos(first);
+            double result = Math.Pow(first, 3);
             return result;
         }
     }

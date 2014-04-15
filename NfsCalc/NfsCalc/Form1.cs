@@ -49,12 +49,12 @@ namespace NfsCalc
             double firstArgument = Convert.ToDouble(Argument1.Text);
             double secondArgument = Convert.ToDouble(Argument2.Text);
             IBinaryCalculator calculator = BinaryCalculatorFactory.CreateBinaryCalculator(name);
-            Result.Text = calculator.Calculate(firstArgument, secondArgument);
+            Result.Text = calculator.Calculate(firstArgument, secondArgument).ToString();
         }
         private void BinaryOperation(string name)
         {double firstArgument=Convert.ToDouble(Argument1.Text);
         IBinaryOperation calculator = MonoFactory.CreateBinaryOperation(name);
-        Result.Text = calculator.Calculate(firstArgument);
+        Result.Text = calculator.Calculate(firstArgument).ToString();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -136,5 +136,23 @@ namespace NfsCalc
         {
             BinaryOperation("log2_X");
         }
+
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("Powm3");
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("DivisionTwoIntoX");
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("Factorial");
+        }
+
+       
     }
 }

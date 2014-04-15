@@ -8,10 +8,10 @@ namespace NfsCalc.BinaryCalculator
 {
     public class DivisionOneIntoX : IBinaryOperation
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = 1/first;
-            return result.ToString();
+            return result;
         }
     }
 }

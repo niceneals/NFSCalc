@@ -8,10 +8,10 @@ namespace NfsCalc.BinaryOperation
 {
     public class Powm2:IBinaryOperation
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = Math.Pow(first, 2);
-            return result.ToString();
+            return result;
         }
     }
 }

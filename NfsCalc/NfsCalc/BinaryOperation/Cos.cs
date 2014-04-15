@@ -8,10 +8,10 @@ namespace NfsCalc.BinaryOperation
 {
     public class Cos:IBinaryOperation
     {
-        public string Calculate(double first)
+        public double Calculate(double first)
         {
             double result = Math.Cos(first);
-            return result.ToString();
+            return result;
         }
     }
 }
