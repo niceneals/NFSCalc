@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using NfsCalc.BinaryCalculator;
 using NfsCalc.BinaryOperation;
+using NfsCalc.Sort;
 
 namespace NfsCalc
 {
@@ -33,8 +34,9 @@ namespace NfsCalc
 
         private void button2_Click(object sender, EventArgs e)
         {
-          BinaryCalculator("Substraction");
+            BinaryCalculator("Substraction");
         }
+
         private void button3_Click_1(object sender, EventArgs e)
         {
             BinaryCalculator("Multiplayer");
@@ -42,8 +44,9 @@ namespace NfsCalc
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-           BinaryCalculator("Division");
+            BinaryCalculator("Division");
         }
+
         private void BinaryCalculator(string name)
         {
             double firstArgument = Convert.ToDouble(Argument1.Text);
@@ -51,10 +54,24 @@ namespace NfsCalc
             IBinaryCalculator calculator = BinaryCalculatorFactory.CreateBinaryCalculator(name);
             Result.Text = calculator.Calculate(firstArgument, secondArgument).ToString();
         }
+
         private void BinaryOperation(string name)
-        {double firstArgument=Convert.ToDouble(Argument1.Text);
-        IBinaryOperation calculator = MonoFactory.CreateBinaryOperation(name);
-        Result.Text = calculator.Calculate(firstArgument).ToString();
+        {
+            double firstArgument = Convert.ToDouble(Argument1.Text);
+            IBinaryOperation calculator = MonoFactory.CreateBinaryOperation(name);
+            Result.Text = calculator.Calculate(firstArgument).ToString();
+        }
+
+        private void Sort(string name)
+        {
+            string[] stringArray = Argument1.Text.Split(' ');
+            Int32[] array=new int[stringArray.Length];
+            for (int i = 0; i < stringArray.Length; i++)
+            {
+                array[i] = Convert.ToInt32(stringArray[i]);
+            }
+            ISortOperation sorter = SortFactory.CreateBinaryCalculator(name);
+            Result.Text = sorter.Sort(array).ToString();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -153,6 +170,11 @@ namespace NfsCalc
             BinaryOperation("Factorial");
         }
 
-       
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Sort("Gnom");
+        }
+
+
     }
 }
