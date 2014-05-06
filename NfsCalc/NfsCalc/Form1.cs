@@ -71,7 +71,14 @@ namespace NfsCalc
                 array[i] = Convert.ToInt32(stringArray[i]);
             }
             ISortOperation sorter = SortFactory.CreateBinaryCalculator(name);
-            Result.Text = sorter.Sort(array).ToString();
+            int[] soresult = sorter.Sort(array);
+            string stringSoresult = string.Empty;
+            foreach (int element in soresult)
+            {
+                stringSoresult += element + " ";
+            }
+            Result.Text = stringSoresult;
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
