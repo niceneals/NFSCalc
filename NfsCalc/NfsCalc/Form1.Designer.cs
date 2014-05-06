@@ -55,6 +55,7 @@
             this.button23 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Argument1
@@ -318,11 +319,22 @@
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(265, 165);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 23);
+            this.button24.TabIndex = 41;
+            this.button24.Text = "Пузырёк";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 353);
+            this.Controls.Add(this.button24);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button23);
@@ -387,6 +399,7 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button24;
     }
 }
 

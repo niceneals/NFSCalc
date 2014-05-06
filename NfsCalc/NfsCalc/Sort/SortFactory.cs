@@ -14,6 +14,8 @@ namespace NfsCalc.Sort
             {
                 case "Gnom":
                     return new Gnom();
+                case "BubbleSort":
+                    return new BubbleSort();
                 default:
                     throw new ArgumentException("Неизвестный калькулятор", "name");
             }

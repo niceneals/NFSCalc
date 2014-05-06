@@ -182,6 +182,11 @@ namespace NfsCalc
             Sort("Gnom");
         }
 
+        private void button24_Click(object sender, EventArgs e)
+        {
+            Sort("BubbleSort");
+        }
+
 
     }
 }
