@@ -8,9 +8,13 @@ namespace NfsCalc.BinaryOperation
 {
     public class Sqrt:IBinaryOperation
     {
-        public double Calculate(double first)
+    public double Calculate(double first)
         {
-            double result = Math.Sqrt(first);
+        if (first < 0)
+        {
+            throw new Exception("Не может быть отрицательным");
+        }
+        double result = Math.Sqrt(first);
             return result;
         }
     }

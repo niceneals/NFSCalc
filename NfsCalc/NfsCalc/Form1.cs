@@ -49,21 +49,37 @@ namespace NfsCalc
 
         private void BinaryCalculator(string name)
         {
-            double firstArgument = Convert.ToDouble(Argument1.Text);
-            double secondArgument = Convert.ToDouble(Argument2.Text);
-            IBinaryCalculator calculator = BinaryCalculatorFactory.CreateBinaryCalculator(name);
-            Result.Text = calculator.Calculate(firstArgument, secondArgument).ToString();
+            try
+            {
+                double firstArgument = Convert.ToDouble(Argument1.Text);
+                double secondArgument = Convert.ToDouble(Argument2.Text);
+                IBinaryCalculator calculator = BinaryCalculatorFactory.CreateBinaryCalculator(name);
+                Result.Text = calculator.Calculate(firstArgument, secondArgument).ToString();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         private void BinaryOperation(string name)
         {
+            try
+            {
             double firstArgument = Convert.ToDouble(Argument1.Text);
             IBinaryOperation calculator = MonoFactory.CreateBinaryOperation(name);
             Result.Text = calculator.Calculate(firstArgument).ToString();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         private void Sort(string name)
         {
+               try
+            {
             string[] stringArray = Argument1.Text.Split(' ');
             Int32[] array=new int[stringArray.Length];
             for (int i = 0; i < stringArray.Length; i++)
@@ -78,6 +94,11 @@ namespace NfsCalc
                 stringSoresult += element + " ";
             }
             Result.Text = stringSoresult;
+            }
+               catch (Exception e)
+               {
+                   MessageBox.Show(e.Message);
+               }
             
         }
 
