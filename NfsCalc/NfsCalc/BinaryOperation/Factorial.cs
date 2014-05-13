@@ -10,7 +10,17 @@ namespace NfsCalc.BinaryOperation
     {
             public double Calculate(double first)
             {
-             return (first == 0) ? 1 : first * Calculate(first - 1);
+                if (first <= 0)
+                {
+                    throw new Exception("Не может быть отрицательным и равным нулю");
+                }
+                double i;
+                double result=1;
+                for (i = first; i > 0; i--)
+                {
+                    result = result * i;
+                }
+                return result;
             }
         }
     }

@@ -53,6 +53,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BinaryOperations\DivisionTwoIntoXTest.cs" />
+    <Compile Include="BinaryOperations\FactorialTest.cs" />
+    <Compile Include="BinaryOperations\log2_XTest.cs" />
+    <Compile Include="BinaryOperations\logTest.cs" />
+    <Compile Include="BinaryOperations\ModulTest.cs" />
+    <Compile Include="BinaryOperations\SqrtTest.cs" />
+    <Compile Include="BinaryOperations\tgTest.cs" />
     <Compile Include="SortOperations\BubblesTest.cs" />
     <Compile Include="UnaryOperations\AdderTest.cs" />
     <Compile Include="BinaryOperations\CosTest.cs" />
