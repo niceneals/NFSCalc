@@ -46,9 +46,9 @@
   <ItemGroup>
     <Compile Include="BinaryOperation\Arccosinus.cs" />
     <Compile Include="BinaryOperation\Arcsinus.cs" />
-    <Compile Include="BinaryCalculator\BinaryCalculatorFactory.cs" />
-    <Compile Include="BinaryCalculator\Division.cs" />
-    <Compile Include="BinaryCalculator\Pow%28m,n%29.cs" />
+    <Compile Include="UnaryOperation\BinaryCalculatorFactory.cs" />
+    <Compile Include="UnaryOperation\Division.cs" />
+    <Compile Include="UnaryOperation\Pow%28m,n%29.cs" />
     <Compile Include="BinaryOperation\Cos.cs" />
     <Compile Include="BinaryOperation\ctg.cs" />
     <Compile Include="BinaryOperation\DegreesToRadians.cs" />
@@ -73,12 +73,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="BinaryCalculator\IBinaryCalculator.cs" />
-    <Compile Include="BinaryCalculator\Multiplayer.cs" />
-    <Compile Include="BinaryCalculator\Adder.cs" />
+    <Compile Include="UnaryOperation\IBinaryCalculator.cs" />
+    <Compile Include="UnaryOperation\Multiplayer.cs" />
+    <Compile Include="UnaryOperation\Adder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BinaryCalculator\Substraction.cs" />
+    <Compile Include="UnaryOperation\Substraction.cs" />
     <Compile Include="Sort\BubbleSort.cs" />
     <Compile Include="Sort\Gnom.cs" />
     <Compile Include="Sort\ISortOperation.cs" />

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace NfsCalc.Sort
     {
         public int[] Sort(int[] array)
         {
+            int tmp;
             int i = 1, k = 2;
             while (i < array.Length)
             {
@@ -20,9 +22,10 @@ namespace NfsCalc.Sort
                 }
                 else
                 {
-                    int tmp = array[i - 1];
+                     tmp = array[i - 1];
                     array[i - 1] = array[i];
-                    i -= 1;
+                    array[i] = tmp;
+                    i --;
                     if (i == 0)
                     {
                         i = 1;
