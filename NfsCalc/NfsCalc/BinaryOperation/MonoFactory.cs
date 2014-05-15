@@ -31,6 +31,9 @@ namespace NfsCalc.BinaryOperation
                 case "powXE": return new powXE();
                 case "log2_X": return new log2_X();
                 case "Factorial": return new Factorial();
+                case "Atan": return new Atan();
+                case "Sqrt3": return new Sqrt3();
+                case "PidivN": return new PidivN();
                 default:
                     throw new ArgumentException("Неизвестный калькулятор", "name");
             }

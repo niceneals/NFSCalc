@@ -46,6 +46,10 @@
   <ItemGroup>
     <Compile Include="BinaryOperation\Arccosinus.cs" />
     <Compile Include="BinaryOperation\Arcsinus.cs" />
+    <Compile Include="BinaryOperation\Atan.cs" />
+    <Compile Include="BinaryOperation\PidivN.cs" />
+    <Compile Include="BinaryOperation\Sqrt3.cs" />
+    <Compile Include="Sort\CombSort.cs" />
     <Compile Include="UnaryOperation\BinaryCalculatorFactory.cs" />
     <Compile Include="UnaryOperation\Division.cs" />
     <Compile Include="UnaryOperation\Pow%28m,n%29.cs" />

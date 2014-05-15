@@ -208,6 +208,26 @@ namespace NfsCalc
             Sort("BubbleSort");
         }
 
+        private void button25_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("Atan");
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("Sqrt3");
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            BinaryOperation("PidivN");
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            Sort("CombSort");
+        }
+
 
     }
 }
