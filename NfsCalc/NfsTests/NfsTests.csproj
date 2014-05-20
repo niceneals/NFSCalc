@@ -53,6 +53,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BinaryOperations\ArccosinusTest.cs" />
+    <Compile Include="BinaryOperations\ArcsinusTest.cs" />
+    <Compile Include="BinaryOperations\AtanTest.cs" />
+    <Compile Include="BinaryOperations\CtgTest.cs" />
+    <Compile Include="BinaryOperations\DegreesToRadiansTest.cs" />
+    <Compile Include="BinaryOperations\DivisionOneIntoXTest.cs" />
     <Compile Include="BinaryOperations\DivisionTwoIntoXTest.cs" />
     <Compile Include="BinaryOperations\FactorialTest.cs" />
     <Compile Include="BinaryOperations\log2_XTest.cs" />
@@ -61,6 +67,7 @@
     <Compile Include="BinaryOperations\SqrtTest.cs" />
     <Compile Include="BinaryOperations\tgTest.cs" />
     <Compile Include="SortOperations\BubblesTest.cs" />
+    <Compile Include="SortOperations\CombSortTest.cs" />
     <Compile Include="UnaryOperations\AdderTest.cs" />
     <Compile Include="BinaryOperations\CosTest.cs" />
     <Compile Include="UnaryOperations\DivisionTest.cs" />

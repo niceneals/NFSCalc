@@ -10,7 +10,7 @@ using NfsCalc.BinaryCalculator;
 namespace NfsTests
 {
     [TestClass]
-    public class PowTest
+    public class Pow_m_n_
     {
         [TestMethod]
         public void TestMethod4()
